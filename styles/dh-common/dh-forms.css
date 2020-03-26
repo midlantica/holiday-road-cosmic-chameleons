@@ -130,6 +130,7 @@ select option {
   border-color: hsla(0, 0%, 55%, 0.25);
   outline: none;
   cursor: pointer;
+  font-size: 0.6em;
 }
 
 .dropdown:hover {

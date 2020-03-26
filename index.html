@@ -18,10 +18,16 @@
 
     <main class="grid">
 
+      <!-- #### ASIDE itinForm #### -->
+      <!-- ######################## -->
       <aside class="itinForm box">
+
+        <!-- FORM -->
         <section>
           <h2>Choose Itinerary</h2>
-          <form class="dh-Form">
+          <form class="dh-Form marT1">
+
+            <!-- Park Menu -->
             <fieldset class="flexColumn marB1">
               <label for="parkSelectMenu">Park</label>
               <select name="parkeraries" class="parkSelectMenu dropdown">
@@ -29,6 +35,7 @@
               </select>
             </fieldset>
 
+            <!-- Attractions Menu -->
             <fieldset class="flexColumn marB1">
               <label for="attractSelectMenu">Attractions</label>
               <select name="attractraries" class="attractSelectMenu dropdown">
@@ -36,6 +43,7 @@
               </select>
             </fieldset>
 
+            <!-- Eateries Menu -->
             <fieldset class="flexColumn marB1">
               <label for="eatSelectMenu">Eateries</label>
               <select name="eateraries" class="eatSelectMenu dropdown">
@@ -45,6 +53,7 @@
           </form>
         </section>
 
+        <!-- Saved Itineraries -->
         <section class="itinSaves box">
           <h4>Saved Itineraries</h4>
           <p><a href=" #">Itin A</a></p>
@@ -53,21 +62,31 @@
         </section>
       </aside>
 
+      <!-- #### ItinPreview #### -->
+      <!-- ##################### -->
       <section class="itinPreview box">
         <h2>Selected Itinerary</h2>
         <div class="gridWrap">
+
+          <!-- Itin Park -->
           <div class="itin--park box">
             <h3 class="name">Park Name</h3>
             <button>See Details</button>
           </div>
+
+          <!-- Itin Attractions -->
           <div class="itin--attraction box">
             <h3 class="name">Attract Name</h3>
             <button>See Details</button>
           </div>
+
+          <!-- Itin Eatery -->
           <div class="itin--eatery box">
             <h3 class="name">Eatery Name</h3>
             <button>See Details</button>
           </div>
+
+          <!-- Itin Weather -->
           <div class="itin--weather box">
             <h3 class="name">Weather</h3>
             <div>

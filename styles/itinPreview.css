@@ -30,6 +30,12 @@
 
 .itinPreview [class^="itin"] button {
   font-size: 0.5em;
+  background: var(--teal50);
+}
+
+.itinPreview [class^="itin"] button:hover {
+  color: var(--teal50);
+  background: var(--teal900);
 }
 
 itin--park {
@@ -48,9 +54,17 @@ itin--eatery {
 }
 
 .itinPreview .itinSaveBtn {
-  font-size: 0.75em;
+  font-size: 0.65em;
   text-align: center;
   margin: auto;
-  margin-top: 1em;
+  margin-top: 0.75em;
   padding: 0.55em 1.05em;
+  color: var(--teal900);
+  background: var(--teal100);
+  border-radius: 20px;
+}
+
+.itinPreview .itinSaveBtn:hover {
+  color: var(--teal50);
+  background: var(--teal900);
 }

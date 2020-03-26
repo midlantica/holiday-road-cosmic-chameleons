@@ -18,7 +18,7 @@
 .dh-Form label {
   cursor: pointer;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   margin: 0.8rem 0 0.3em;
   letter-spacing: 0.05ch;
 }
@@ -130,7 +130,7 @@ select option {
   border-color: hsla(0, 0%, 55%, 0.25);
   outline: none;
   cursor: pointer;
-  font-size: 0.6em;
+  font-size: 1em;
 }
 
 .dropdown:hover {

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <h1 class="container">
+  <div class="container">
 
     <header>
       <h1>Cosmic Itineraries</h1>
@@ -27,27 +27,47 @@
           <h2>Choose Itinerary</h2>
           <form class="dh-Form marT1">
 
+            <!-- State Menu -->
+            <fieldset class="flexColumn marB1">
+              <label for="stateSelectMenu">State</label>
+              <select name="state" class="stateSelectMenu dropdown">
+                <option value="Select..." selected>Select State...</option>
+                <option value="Alabama">Alabama</option>
+                <option value="Alasaka.">Alasaka</option>
+                <option value=".......">......</option>
+              </select>
+            </fieldset>
+
             <!-- Park Menu -->
             <fieldset class="flexColumn marB1">
               <label for="parkSelectMenu">Park</label>
-              <select name="parkeraries" class="parkSelectMenu dropdown">
+              <select name="parks" class="parkSelectMenu dropdown">
                 <option value="Select..." selected>Select park...</option>
+                <option value="Radnor Lake Park">Radnor Lake Park</option>
+                <option value="Really Cool Park">Really Cool Park</option>
+                <option value=".........">........</option>
               </select>
             </fieldset>
 
             <!-- Attractions Menu -->
             <fieldset class="flexColumn marB1">
               <label for="attractSelectMenu">Attractions</label>
-              <select name="attractraries" class="attractSelectMenu dropdown">
+              <select name="attractions" class="attractSelectMenu dropdown">
                 <option value="Select..." selected>Select attraction...</option>
+                <option value="The Free Fair">The Free Fair</option>
+                <option value="The Donut Museum">The Donut Museum</option>
+                <option value=".........">.........</option>
               </select>
             </fieldset>
 
             <!-- Eateries Menu -->
             <fieldset class="flexColumn marB1">
               <label for="eatSelectMenu">Eateries</label>
-              <select name="eateraries" class="eatSelectMenu dropdown">
-                <option value="Select..." selected>Select eatery..</option>
+              <select name="eateries" class="eatSelectMenu dropdown">
+                <option value="Select..." selected>Select eatery...</option>
+                <option value="...">McDonalds</option>
+                <option value="...">Bagel Emporium</option>
+                <option value=".........">.........</option>
               </select>
             </fieldset>
           </form>
@@ -56,7 +76,7 @@
         <!-- Saved Itineraries -->
         <section class="itinSaves box">
           <h4>Saved Itineraries</h4>
-          <p><a href=" #">Itin A</a></p>
+          <p><a href="#">Itin A</a></p>
           <p><a href="#">Itin B</a></p>
           <p><a href="#">Itin C</a></p>
         </section>

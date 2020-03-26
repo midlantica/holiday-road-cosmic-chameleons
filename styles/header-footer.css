@@ -2,10 +2,10 @@ header,
 footer {
   color: var(--white);
   background: var(--teal-900);
+  padding: 1em 1.5em;
 }
 
 header {
-  padding: 20px 20px;
   position: fixed;
   /* bottom: 0; */
   width: 100%;
@@ -30,6 +30,7 @@ header h1 {
   color: white !important;
   font-weight: 700;
   letter-spacing: 0.04ch;
+  text-shadow: 2px 2px 3px #00261f;
 }
 
 header h1 i {
@@ -38,9 +39,10 @@ header h1 i {
 
 footer h4,
 footer h5 {
-  margin: 0 0 0.5em;
+  margin: 0 0 0.25em;
   padding: 0;
   color: white !important;
   font-weight: 600;
   letter-spacing: 0.04ch;
+  text-shadow: 2px 2px 3px #00261f;
 }

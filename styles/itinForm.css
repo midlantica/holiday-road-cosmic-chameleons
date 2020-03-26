@@ -3,6 +3,11 @@
   flex-direction: column;
   flex-wrap: nowrap;
   min-width: 300px;
+  /* background: linear-gradient(180deg,
+    var(--teal100) 0%,
+    var(--white) 1%,
+    var(--white) 100%)
+    !important; */
 }
 
 .itinForm h2 {
@@ -12,7 +17,12 @@
 
 .itinSaves {
   margin-top: auto;
-  background: var(--teal50) !important;
+  background: hsla(174, 100%, 98%, 1) !important;
+    /* background: linear-gradient(180deg,
+    var(--teal100) 0%,
+    var(--white) 5%,
+    var(--white) 100%)
+    !important; */
 }
 
 .itinSaves h4 {

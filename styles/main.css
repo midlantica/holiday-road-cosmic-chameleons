@@ -1,0 +1,59 @@
+@import "./colors.css";
+@import "./dh-common/_dh-main.css";
+@import "./tyography.css";
+@import "./header-footer.css";
+@import "./buttons.css";
+@import "./itinForm.css";
+@import "./itinPreview.css";
+
+:root {
+  --font-head: "Baloo 2", cursive;
+  --font-copy: "Baloo 2", cursive;
+}
+
+a {
+  color: var(--teal900);
+  /* text-decoration: none; */
+}
+
+a:hover {
+  color: var(--teal300);
+  /* text-decoration: none; */
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--white);
+  font-family: var(--font-copy);
+  font-size: 1em;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0em;
+  min-width: 320px;
+}
+
+main {
+  padding: 3.1em 0.7em 6.8em;
+}
+
+main.grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-gap: 1em;
+  height: calc(100vh - 7em);
+}
+
+.box {
+  padding: 0.5em 1em;
+  background: hsl(0, 0%, 100%);
+  border-radius: 3px;
+  box-shadow: 0px 2px 10px -10px black;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.panel {
+  box-shadow: 0px 2px 10px -10px black;
+}

@@ -1,0 +1,56 @@
+.itinPreview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-content: center; */
+}
+
+.itinPreview h2 {
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.itinPreview h3 {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.gridWrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 0.5em;
+  justify-content: center;
+}
+
+.itinPreview [class^="itin"] {
+  text-align: center;
+  /* min-width: 28%; */
+  justify-content: center;
+}
+
+.itinPreview [class^="itin"] button {
+  font-size: 0.5em;
+}
+
+itin--park {
+  /*  */
+}
+
+itin--park {
+}
+
+.itin--attraction {
+  /*  */
+}
+
+itin--eatery {
+  /*  */
+}
+
+.itinPreview .itinSaveBtn {
+  font-size: 0.75em;
+  text-align: center;
+  margin: auto;
+  margin-top: 1em;
+  padding: 0.55em 1.05em;
+}

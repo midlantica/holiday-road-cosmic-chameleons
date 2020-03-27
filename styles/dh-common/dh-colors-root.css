@@ -16,75 +16,13 @@
   --dark: #212529 !important;
   --transparent: transparent !important;
   /*  */
-  /* transparent blacks */
-  --transBlack-100: hsla(0, 0%, 0%, 0.1);
-  --transBlack-200: hsla(0, 0%, 0%, 0.25);
-  --transBlack-300: hsla(0, 0%, 0%, 0.5);
-  --transBlack-400: hsla(0, 0%, 0%, 0.75);
-  --transBlack-500: hsla(0, 0%, 0%, 0.9);
-  /* transparent whites */
-  --transWhite-100: hsla(0, 0%, 100%, 0.1);
-  --transWhite-200: hsla(0, 0%, 100%, 0.25);
-  --transWhite-300: hsla(0, 0%, 100%, 0.5);
-  --transWhite-400: hsla(0, 0%, 100%, 0.75);
-  --transWhite-500: hsla(0, 0%, 100%, 1);
   /* Material colors */
-  --red50: #ffebee;
-  --red100: #ffcdd2;
-  --red200: #ef9a9a;
-  --red300: #e57373;
-  --red400: #ef5350;
-  --red500: #f44336;
-  --red600: #e53935;
-  --red700: #d32f2f;
-  --red800: #c62828;
-  --red900: #b71c1c;
-  --redA100: #ff8a80;
-  --redA200: #ff5252;
-  --redA400: #ff1744;
-  --redA700: #d50000;
-  --pink50: #fce4ec;
-  --pink100: #f8bbd0;
-  --pink200: #f48fb1;
-  --pink300: #f06292;
-  --pink400: #ec407a;
-  --pink500: #e91e63;
-  --pink600: #d81b60;
-  --pink700: #c2185b;
-  --pink800: #ad1457;
-  --pink900: #880e4f;
-  --pinkA100: #ff80ab;
-  --pinkA200: #ff4081;
-  --pinkA400: #f50057;
-  --pinkA700: #c51162;
-  --purple50: #f3e5f5;
-  --purple100: #e1bee7;
-  --purple200: #ce93d8;
-  --purple300: #ba68c8;
-  --purple400: #ab47bc;
-  --purple500: #9c27b0;
-  --purple600: #8e24aa;
-  --purple700: #7b1fa2;
-  --purple800: #6a1b9a;
-  --purple900: #4a148c;
-  --purpleA100: #ea80fc;
-  --purpleA200: #e040fb;
-  --purpleA400: #d500f9;
-  --purpleA700: #aa00ff;
-  --deep-purple50: #ede7f6;
-  --deep-purple100: #d1c4e9;
-  --deep-purple200: #b39ddb;
-  --deep-purple300: #9575cd;
-  --deep-purple400: #7e57c2;
-  --deep-purple500: #673ab7;
-  --deep-purple600: #5e35b1;
-  --deep-purple700: #512da8;
-  --deep-purple800: #4527a0;
-  --deep-purple900: #311b92;
-  --deep-purpleA100: #b388ff;
-  --deep-purpleA200: #7c4dff;
-  --deep-purpleA400: #651fff;
-  --deep-purpleA700: #6200ea;
+
+
+
+
+
+
   --indigo50: #e8eaf6;
   --indigo100: #c5cae9;
   --indigo200: #9fa8da;
@@ -283,23 +221,5 @@
   --blue-gray700: #455a64;
   --blue-gray800: #37474f;
   --blue-gray900: #263238;
-  --red: var(--red500);
-  --pink: var(--pink500);
-  --purple: var(--purple500);
-  --deep-purple: var(--deep-purple500);
-  --indigo: var(--indigo500);
-  --blue: var(--blue500);
-  --light-blue: var(--light-blue500);
-  --cyan: var(--cyan500);
-  --teal: var(--teal500);
-  --green: var(--green500);
-  --light-green: var(--light-green500);
-  --lime: var(--lime500);
-  --yellow: var(--yellow500);
-  --amber: var(--amber500);
-  --orange: var(--orange500);
-  --deep-orange: var(--deep-orange500);
-  --brown: var(--brown500);
-  --gray: var(--gray500);
-  --blue-gray: var(--blue-gray500);
+
 }

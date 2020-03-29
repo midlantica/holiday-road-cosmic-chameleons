@@ -2,12 +2,20 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  min-width: 300px;
+  min-width: 250px;
+  align-items: center;
   /* background: linear-gradient(180deg,
     var(--teal100) 0%,
     var(--white) 1%,
     var(--white) 100%)
     !important; */
+}
+
+.itinFormWrap {
+  min-width: 260px;
+}
+
+@media (min-width: 390px && max-width: 670px) {
 }
 
 .itinForm h2 {
@@ -18,7 +26,8 @@
 .itinSaves {
   margin-top: auto;
   background: hsla(174, 100%, 98%, 1) !important;
-    /* background: linear-gradient(180deg,
+  min-width: 206px;
+  /* background: linear-gradient(180deg,
     var(--teal100) 0%,
     var(--white) 5%,
     var(--white) 100%)

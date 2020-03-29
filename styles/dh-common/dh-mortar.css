@@ -1,3 +1,6 @@
+/* prettier-ignore */
+<!-- prettier-ignore-start -->
+
 /* // REMs
 // m = margin, p = padding
 // T = top, B = bottom, L = Left, R = Right
@@ -17,10 +20,6 @@
 .marLAuto   { margin-left:    auto !important; }
 .marRAuto   { margin-right:   auto !important; }
 .marLRAuto  { margin-left:    auto !important; margin-right: auto !important; }
-/* // PAD AUTOS */
-.padLAuto   { padding-left:    auto !important; }
-.padRAuto   { padding-right:   auto !important; }
-.padLRAuto  { padding-left:    auto !important; padding-right: auto !important; }
 /**********************************************/
 /**********************************************/
 /* // PAD TO */
@@ -197,3 +196,5 @@
 /* // -> 3 REM */
 .marLRBal3  { margin-left:    3rem !important; margin-right: 3rem !important; }
 .marTBBal3  { margin-top:     3rem !important; margin-bottom: 3rem !important; }
+
+<!-- prettier-ignore-end -->

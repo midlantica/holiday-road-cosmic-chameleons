@@ -15,7 +15,8 @@
   min-width: 260px;
 }
 
-@media (min-width: 390px && max-width: 670px) {
+@media ((min-width: 390px) and (max-width: 670px)) {
+  /*  */
 }
 
 .itinForm h2 {

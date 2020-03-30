@@ -5,15 +5,18 @@ const eventHub = document.querySelector('.container')
 const contentTarget = document.querySelector('.selector__eatery')
 
 contentTarget.addEventListener('change', changeEvent => {
-  const theEateryThatWasChosen = changeEvent.target.value
+  if (changeEvent.target.id === 'eaterySelect') {
+    const theEateryThatWasChosen = changeEvent.target.value
 
-  const eateryChosenEvent = new CustomEvent('eateryChosen', {
-    detail: {
-      chosenEatery: theEateryThatWasChosen
-    }
-  })
+    const eateryChosenEvent = new CustomEvent('eateryChosen', {
+      detail: {
+        chosenEatery: theEateryThatWasChosen
+      }
+    })
 
-  eventHub.dispatchEvent(eateryChosenEvent)
+    eventHub.dispatchEvent(eateryChosenEvent)
+    console.log('Eatery choice made: ' + theEateryThatWasChosen)
+  }
 })
 
 export const EaterySelector = () => {

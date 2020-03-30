@@ -1,48 +1,36 @@
-// import { Park } from "../parks/Park.js"
-// import { SaveItineraryButton } from "../preview/SaveItineraryButton.js"
-// import "../weather/Weather.js"
-//  SPITBALLING.......???
-import Eatery from './eateries/Eatery.js'
-
-// import EaterySelector from './eateries/EaterySelector.js'
-// import parks from './parks/Park.js'
-// import parksDataProvider from './parks/ParkDataProvider.js'
-// import attractions from '.attractions/Attraction.js'
-// import attraDataProviderctions from '.attractions/Attraction.DataProvider.js'
+import { Eatery } from '../eateries/Eatery.js'
+import { useEateries } from '../eateries/EateryDataProvider.js'
+Eatery()
 
 const eventHub = document.querySelector('.container')
 const contentTarget = document.querySelector('.preview__eatery')
 
-Eatery()
+eventHub.addEventListener('eateryChosen', event => {
+  // What crime was chosen?
+  const theEateryThatWasChosen = event.detail.chosenEatery
 
-// const render = () =>
-//  getParks()
-//  getAttractions()
-//  getEateries()
+  // Get the eateries
+  let eateriesToDisplay = useEateries()
 
-// looping logic on all of those...
-// refactor this??
-// THIS IS FROM GLASSDALE notesList.js
-// getNotes().then(() => {
-//     const allTheNotes = useNotes()
-//     const allTheCriminals = useCriminals()
+  if (theEateryThatWasChosen !== '0') {
+    // find the list of eateries who committed the crime
+    eateriesToDisplay = eateriesToDisplay.find(eateries => {
+      if (chosenEatery === theEateryThatWasChosen) {
+        return true
+      }
+      return false
+    })
+  }
+  render(eateriesToDisplay)
+})
 
-//                                        >>.find
-//     contentTarget.innerHTML = allTheNotes.map(
-//       currentNoteObject => {
+const render = eateriesToRender => {
+  contentTarget.innerHTML = eateriesToRender.map(eateryObject => {
+    return Eatery(eateryObject)
+  })
+}
 
-//         // Find the criminal for the current note
-//         const theFoundCriminal = allTheCriminals.find(
-//           (currentCriminalObject) => {
-//             return currentNoteObject.criminal === currentCriminalObject.id
-//           }
-//         )
-
-//         return Note(currentNoteObject, theFoundCriminal)
-//       }
-//     ).join("")
-//   })
-// }
-
-//   render()
-// ??????????????????
+export const EaterySelected = () => {
+  const eateries = useEateries()
+  render(eateries)
+}

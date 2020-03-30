@@ -2,6 +2,7 @@ import { getParks } from './parks/ParkDataProvider.js'
 import { getEateries } from './eateries/EateryDataProvider.js'
 import { getAttractions } from './attractions/AttractionDataProvider.js'
 import { ItineraryForm } from './itineraries/ItineraryForm.js'
+import './preview/ItineraryPreview.js'
 
 getParks()
     .then(getEateries)

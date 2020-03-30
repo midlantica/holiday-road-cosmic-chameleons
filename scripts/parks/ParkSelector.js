@@ -1,7 +1,7 @@
 import { useParks } from "./parkDataProvider.js"
 
 
-const contentTarget = document.querySelector(".selectorContainer")
+const contentTarget = document.querySelector(".selector__park")
 const eventHub = document.querySelector(".container")
 
 

@@ -1,6 +1,8 @@
 import { ParkSelector } from "../parks/ParkSelector.js"
-ParkSelector()
+import { EaterySelector } from "../eateries/EaterySelector.js"
+
 
 export const ItineraryForm = () => {
     ParkSelector()
+    EaterySelector()
 }

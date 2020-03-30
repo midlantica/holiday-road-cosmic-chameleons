@@ -1,4 +1,4 @@
-import { useParks } from "./parkDataProvider.js"
+import { useParks } from "./ParkDataProvider.js"
 
 
 const contentTarget = document.querySelector(".selector__park")

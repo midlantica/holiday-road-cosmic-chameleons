@@ -1,4 +1,5 @@
 import { Eatery } from '../eateries/Eatery.js'
+import { useEateries } from '../eateries/EateryDataProvider.js'
 import { Park } from '../parks/Park.js'
 import { useParks } from '../parks/ParkDataProvider.js'
 
@@ -19,9 +20,10 @@ eventHub.addEventListener('parkChosen', customEvent => {
 eventHub.addEventListener('eateryChosen', customEvent => {
   const eateriesArray = useEateries()
 
-  const foundEatery = eateriesArray.find(
-    eateryObj => eateryObj.id === customEvent.detail.chosenEatery
-  )
+  const chosenEatery = eateriesArray.find(eateryObject => {
+    // debugger
+    return eateryObject.id === parseInt(customEvent.detail.chosenEatery)
+  })
 
-  eateryContentTarget.innerHTML = Eatery(foundEatery)
+  eateryContentTarget.innerHTML = Eatery(chosenEatery)
 })

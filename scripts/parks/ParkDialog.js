@@ -1,4 +1,4 @@
-export const Park = (parkDialogObject) => {
+export const ParkDialog = (parkDialogObject) => {
     return `
         <section class="preview__park">
             <h3>${parkDialogObject.name}</h3>
@@ -12,6 +12,3 @@ export const Park = (parkDialogObject) => {
         </section>
     `
 }
-
-
-

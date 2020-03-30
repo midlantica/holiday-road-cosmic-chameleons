@@ -1,36 +1,27 @@
 import { Eatery } from '../eateries/Eatery.js'
-import { useEateries } from '../eateries/EateryDataProvider.js'
-Eatery()
+import { Park } from '../parks/Park.js'
+import { useParks } from '../parks/ParkDataProvider.js'
 
 const eventHub = document.querySelector('.container')
-const contentTarget = document.querySelector('.preview__eatery')
+const contentTarget = document.querySelector('.itineraryPreview')
+const parkContentTarget = document.querySelector('.preview__park')
+const eateryContentTarget = document.querySelector('.preview__eatery')
+const attractionContentTarget = document.querySelector('.preview__attraction')
 
-eventHub.addEventListener('eateryChosen', event => {
-  // What crime was chosen?
-  const theEateryThatWasChosen = event.detail.chosenEatery
+eventHub.addEventListener('parkChosen', customEvent => {
+  const parksArray = useParks()
 
-  // Get the eateries
-  let eateriesToDisplay = useEateries()
+  const foundPark = parksArray.find(parkObj => parkObj.id === customEvent.detail.chosenPark)
 
-  if (theEateryThatWasChosen !== '0') {
-    // find the list of eateries who committed the crime
-    eateriesToDisplay = eateriesToDisplay.find(eateries => {
-      if (chosenEatery === theEateryThatWasChosen) {
-        return true
-      }
-      return false
-    })
-  }
-  render(eateriesToDisplay)
+  parkContentTarget.innerHTML = Park(foundPark)
 })
 
-const render = eateriesToRender => {
-  contentTarget.innerHTML = eateriesToRender.map(eateryObject => {
-    return Eatery(eateryObject)
-  })
-}
+eventHub.addEventListener('eateryChosen', customEvent => {
+  const eateriesArray = useEateries()
 
-export const EaterySelected = () => {
-  const eateries = useEateries()
-  render(eateries)
-}
+  const foundEatery = eateriesArray.find(
+    eateryObj => eateryObj.id === customEvent.detail.chosenEatery
+  )
+
+  eateryContentTarget.innerHTML = Eatery(foundEatery)
+})

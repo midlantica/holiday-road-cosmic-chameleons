@@ -1,4 +1,13 @@
 // This is just a blueprint for some logic we want to execute at some point IN THE FUTURE!!!!!
+export const Eatery = eateryObject => {}
+const eventHub = document.querySelector('.container')
+
+eventHub.addEventListener('eateryChosenEvent', customEvent => {
+  render()
+})
+
+// Exports a function that renders the HTML for the eatery preview:
+
 export const Eatery = eateryObject => {
   return `
   <section class="eatery">

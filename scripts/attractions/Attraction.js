@@ -1,3 +1,5 @@
+// Exports a function that renders the HTML for the attraction preview 
+
 export const Attraction = (attractionObject) => {
     return `
         <section class="preview__attraction">

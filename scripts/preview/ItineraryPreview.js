@@ -3,23 +3,24 @@
 // import "../weather/Weather.js"
 //  SPITBALLING.......???
 import Eatery from './eateries/Eatery.js'
+
 // import EaterySelector from './eateries/EaterySelector.js'
 // import parks from './parks/Park.js'
 // import parksDataProvider from './parks/ParkDataProvider.js'
 // import attractions from '.attractions/Attraction.js'
 // import attraDataProviderctions from '.attractions/Attraction.DataProvider.js'
 
-const eventHub = document.querySelector(".container")
-const contentTarget = document.querySelector(".itineraryPreview")
+const eventHub = document.querySelector('.container')
+const contentTarget = document.querySelector('.preview__eatery')
 
 Eatery()
 
-// const render = () => 
-//  getParks() 
+// const render = () =>
+//  getParks()
 //  getAttractions()
 //  getEateries()
 
-// looping logic on all of those... 
+// looping logic on all of those...
 // refactor this??
 // THIS IS FROM GLASSDALE notesList.js
 // getNotes().then(() => {
@@ -43,7 +44,5 @@ Eatery()
 //   })
 // }
 
-
 //   render()
 // ??????????????????
-

@@ -20,7 +20,7 @@ export const ParkSelector = () => {
 // Dispatches "parkChosen" custom event to Weather API and ItineraryPreview.js :
 
 contentTarget.addEventListener("change", changeEvent => {
-    if(changeEvent.target.id === "parkSelect") {
+    if (changeEvent.target.id === "parkSelect") {
         const theParkThatWasChosen = changeEvent.target.value
 
         const parkChosenEvent = new CustomEvent("parkChosen", {

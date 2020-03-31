@@ -1,12 +1,12 @@
-// import { Itinerary } from "./ItineraryList.js"
-// import { } from "./ItineraryDataProvider.js"
+import { Itinerary } from './Itinerary.js'
+import { useItineraries } from './ItineraryDataProvider.js'
 
+const contentTarget = document.querySelector(".itinerariesContainer");
 
-// Store a function in a variable that renders the HTML for the list of saved itineraries 
-export const ItineraryList = () => {
-    return `
-        <article>
-
-        </article>
-    `
+export const renderItinerary = () => {
+    const itineraryEntries = useItineraries();
+    for (const itinerary of itineraryEntries) {
+        const newItinerary = Itinerary(itinerary);
+        contentTarget.innerHTML += newItinerary
+    }
 }

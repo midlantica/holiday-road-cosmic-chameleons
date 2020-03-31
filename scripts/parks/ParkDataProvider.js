@@ -1,7 +1,5 @@
 // Import variable that stores the nps key to use in the fetch call 
 
-import { settings } from "../.Settings.js"
-
 let parks = []
 
   /*

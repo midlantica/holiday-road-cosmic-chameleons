@@ -1,7 +1,5 @@
 import { useEateries } from "./EateryDataProvider.js"
 
-const contentTargetTwo = document.querySelector(".preview__eatery")
-
 const contentTarget = document.querySelector(".eateryDialog")
 const eventHub = document.querySelector(".container")
 
@@ -23,13 +21,13 @@ eventHub.addEventListener("eateryDetailBtnClicked", customEvent => {
 
     EateryDialog(iFoundYou)
 
-    const myEateryDialog = document.querySelector(".eateryDialog")
-    myEateryDialog.showModal()
+    // const myEateryDialog = document.querySelector(".eateryDialog")
+    contentTarget.showModal()
 })
 
 export const EateryDialog = (eateryObject) => {
 
-    contentTargetTwo.innerHTML = `        
+    contentTarget.innerHTML = `        
         <section class="eatery">
             <h4>${eateryObject.businessName}</h>
             <p>${eateryObject.description}</p>

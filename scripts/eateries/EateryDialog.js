@@ -1,11 +1,13 @@
 import { useEateries } from "./EateryDataProvider.js"
 
+const contentTargetTwo = document.querySelector(".preview__eatery")
+
 const contentTarget = document.querySelector(".eateryDialog")
 const eventHub = document.querySelector(".container")
 
-eventHub.addEventListener("EateryDetailsClicked", customEvent => {
+eventHub.addEventListener("eateryDetailBtnClicked", customEvent => {
     // Get the eatery id
-    const eateryId = customEvent.detail.chosenEatery
+    const eateryId = customEvent.detail.clickedEatery
 
     const eateryArray = useEateries()
 
@@ -21,28 +23,18 @@ eventHub.addEventListener("EateryDetailsClicked", customEvent => {
 
     EateryDialog(iFoundYou)
 
-    const myEateryDialog = document.querySelector("#eateryDialog")
+    const myEateryDialog = document.querySelector(".eateryDialog")
     myEateryDialog.showModal()
 })
 
 export const EateryDialog = (eateryObject) => {
-    contentTarget.innerHTML = `
-        <dialog id="eateryDialog">
-            ${
-                eateryObject.map(
-                    (currentEatery) => {
-                        return `
-                        <section class="eatery">
-                          <h4>${eateryObject.businessName}</h>
-                          <p>${eateryObject.description}</p>
-                          <p>${eateryObject.city}</p>
-                          <p>${eateryObject.state}</p>
-                          <p>${eateryObject.ameneties.ameneties.wifi}</p>
-                        </section>  
-                        `
-                    }
-                ).join("")
-            }
-        </dialog>
+
+    contentTargetTwo.innerHTML = `        
+        <section class="eatery">
+            <h4>${eateryObject.businessName}</h>
+            <p>${eateryObject.description}</p>
+            <p>${eateryObject.city}</p>
+            <p>${eateryObject.state}</p>
+        </section>  
     `
 }

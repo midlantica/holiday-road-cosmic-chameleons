@@ -20,8 +20,6 @@ eventHub.addEventListener("eateryDetailBtnClicked", customEvent => {
     )
 
     EateryDialog(iFoundYou)
-
-    // const myEateryDialog = document.querySelector(".eateryDialog")
     contentTarget.showModal()
 })
 

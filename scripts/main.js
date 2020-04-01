@@ -6,6 +6,8 @@ import { renderItinerary } from './itineraries/ItineraryList.js'
 import { getItineraries } from './itineraries/ItineraryDataProvider.js'
 import './preview/ItineraryPreview.js'
 import './eateries/EateryDialog.js'
+import './parks/ParkDialog.js'
+
 
 getParks()
   .then(getEateries)

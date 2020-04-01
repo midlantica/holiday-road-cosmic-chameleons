@@ -23,11 +23,11 @@ eventHub.addEventListener('eateryDetailBtnClicked', customEvent => {
 
 export const EateryDialog = eateryObject => {
   contentTarget.innerHTML = `
-        <section class="eatery">
-            <h4>${eateryObject.businessName}</h>
-            <p>${eateryObject.description}</p>
-            <p>${eateryObject.city}</p>
-            <p>${eateryObject.state}</p>
-        </section>
-    `
+    <section class="eatery">
+      <h4>${eateryObject.businessName}</h>
+      <p>${eateryObject.description}</p>
+      <p>${eateryObject.city}</p>
+      <p>${eateryObject.state}</p>
+    </section>
+  `
 }

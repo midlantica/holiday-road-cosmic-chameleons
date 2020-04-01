@@ -19,12 +19,6 @@
       "id": 3
     },
     {
-<<<<<<< HEAD
-      "park": "1A47416F-DAA3-4137-9F30-14AF86B4E547",
-      "eatery": "1",
-      "attraction": "1",
-      "id": 4
-=======
       "park": "E7E4E103-5FA9-45AC-8843-05DE554CDBB7",
       "eatery": "4",
       "attraction": "4",
@@ -71,7 +65,12 @@
       "eatery": "3",
       "attraction": "8",
       "id": 11
->>>>>>> master
+    },
+    {
+      "park": "1A47416F-DAA3-4137-9F30-14AF86B4E547",
+      "eatery": "2",
+      "attraction": "2",
+      "id": 12
     }
   ]
 }

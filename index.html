@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Holiday Road</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/main.css">
-  <title>Holiday Road</title>
-</head>
+  <body>
+    <header class="headerContainer"></header>
 
-<body>
+    <main class="container">
+      <aside>
+        <section class="selectorContainer">
+          <div class="selector__park"></div>
+          <div class="selector__eatery"></div>
+          <div class="selector__attraction"></div>
+        </section>
+        <section class="itinerariesContainer"></section>
+      </aside>
 
-  <header class="headerContainer"></header>
-
-  <main class="container">
-
-    <aside>
-      <section class="selectorContainer">
-        <div class="selector__park"></div>
-        <div class="selector__eatery"></div>
-        <div class="selector__attraction"></div>
+      <section class="previewContainer">
+        <div class="preview__park"></div>
+        <div class="preview__eatery"></div>
+        <div class="preview__attraction"></div>
+        <div class="preview__weather"></div>
+        <div class="button--saveItinerary"></div>
+        <dialog class="dialog__eatery"></dialog>
+        <dialog class="dialog__attraction"></dialog>
+        <dialog class="dialog__park"></dialog>
       </section>
-      <section class="itinerariesContainer"></section>
-    </aside>
+    </main>
 
-    <section class="previewContainer">
-      <div class="preview__park"></div>
-      <div class="preview__eatery"></div>
-      <div class="preview__attraction"></div>
-      <div class="preview__weather"></div>
-      <div class="button--saveItinerary"></div>
-      <dialog class="dialog__eatery"></dialog>
-      <dialog class="dialog__attraction"></dialog>
-    </section>
+    <footer class="footerContainer"></footer>
 
-  </main>
+    <footer class="footerContainer"></footer>
 
-  <footer class="footerContainer"></footer>
-
-  <script type="module" src="./scripts/main.js"></script>
-</body>
-
+    <script type="module" src="./scripts/main.js"></script>
+  </body>
 </html>

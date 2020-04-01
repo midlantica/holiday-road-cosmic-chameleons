@@ -1,33 +1,33 @@
-import { useParks } from "./ParkDataProvider.js"
+import { useParks } from './ParkDataProvider.js'
 
-const contentTarget = document.querySelector(".selector__park")
-const eventHub = document.querySelector(".container")
+const contentTarget = document.querySelector('.selector__park')
+const eventHub = document.querySelector('.container')
 
 // Exports a function that renders a copy of the parks data inside the parkSelect dropdown:
 
 export const ParkSelector = () => {
-    const parksCollection = useParks()
-    return contentTarget.innerHTML = `
-        <select id="parkSelect">
-            <option value="0">Pick a Park</option>
-            ${parksCollection.map(singlePark => {
+  const parksCollection = useParks()
+  return (contentTarget.innerHTML = `
+    <select id="parkSelect">
+      <option value="0">Pick a Park</option>
+      ${parksCollection.map((singlePark) => {
         return `<option value="${singlePark.id}">${singlePark.name}</option>`
-    })}
-        </select>
-    `
+      })}
+    </select>
+  `)
 }
 
 // Dispatches "parkChosen" custom event to Weather API and ItineraryPreview.js :
 
-contentTarget.addEventListener("change", changeEvent => {
-    if (changeEvent.target.id === "parkSelect") {
-        const theParkThatWasChosen = changeEvent.target.value
+contentTarget.addEventListener('change', (changeEvent) => {
+  if (changeEvent.target.id === 'parkSelect') {
+    const theParkThatWasChosen = changeEvent.target.value
 
-        const parkChosenEvent = new CustomEvent("parkChosen", {
-            detail: {
-                chosenPark: theParkThatWasChosen
-            }
-        })
-        eventHub.dispatchEvent(parkChosenEvent)
-    }
+    const parkChosenEvent = new CustomEvent('parkChosen', {
+      detail: {
+        chosenPark: theParkThatWasChosen
+      }
+    })
+    eventHub.dispatchEvent(parkChosenEvent)
+  }
 })

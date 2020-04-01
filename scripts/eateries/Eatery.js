@@ -12,7 +12,7 @@ const eventHub = document.querySelector(".container")
 eventHub.addEventListener("click", clickEvent => {
   // Generate custom event
   if (clickEvent.target.id.startsWith('button--')) {
-    
+
     const eateryId = clickEvent.target.id.split("--")[1]
 
     // Pass ID of Eatery object along on custom event

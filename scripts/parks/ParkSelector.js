@@ -11,8 +11,8 @@ export const ParkSelector = () => {
         <select id="parkSelect">
             <option value="0">Pick a Park</option>
             ${parksCollection.map(singlePark => {
-                return `<option value="${singlePark.id}">${singlePark.name}</option>`
-            })}
+        return `<option value="${singlePark.id}">${singlePark.name}</option>`
+    })}
         </select>
     `
 }

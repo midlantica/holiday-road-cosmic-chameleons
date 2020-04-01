@@ -6,3 +6,24 @@ export const Eatery = eateryObject => {
     <button id="button--${eateryObject.id}">Details</button>
   `
 }
+
+const eventHub = document.querySelector(".container")
+
+eventHub.addEventListener("click", clickEvent => {
+  // Generate custom event
+  if (clickEvent.target.id.startsWith('button--')) {
+    
+    const eateryId = clickEvent.target.id.split("--")[1]
+
+    // Pass ID of Eatery object along on custom event
+    const eateryChosenEvent = new CustomEvent('eateryDetailBtnClicked', {
+      detail: {
+        clickedEatery: eateryId
+      }
+    })
+
+    // Dispatch Custom event
+    eventHub.dispatchEvent(eateryChosenEvent)
+  }
+
+})

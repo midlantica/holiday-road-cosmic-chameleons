@@ -111,3 +111,8 @@ itin--eatery {
   color: var(--white);
   background: var(--teal900);
 }
+
+.itin--scroll {
+  overflow-y: auto;
+  height: 150px;
+}

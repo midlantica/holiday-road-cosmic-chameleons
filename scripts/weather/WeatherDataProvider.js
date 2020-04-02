@@ -1,19 +1,23 @@
+import { keys } from '../Settings.js'
+
+const eventHub = document.querySelector(".container")
+
 let weather = []
 
-const apiKey = '4244638fb9d6db97c0be6e1c03329477'
-const lat = ''
-const long = ''
+// Fetches 5-day weather forecast by zip code: 
 
-// api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={apiKey}
-export const getWeather = () => {
-  return fetch(
-    'http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=2d2e78f72daf9fab30d7c1c80434141b'
-  )
+export const getWeather = (postalCode) => {
+  return fetch(`https://api.openweathermap.org/data/2.5/forecast?zip=${postalCode}&appid=${keys.weatherKey}`)
     .then((response) => response.json())
     .then((parsedWeather) => {
-      weather = parsedWeather.weather
+      weather = parsedWeather.list[0].weather[0].description
     })
 }
+
+// Dispatches custom event notifying other modules that a weather state change has occurred:
+
+
+// Exports a copy of the updated weather array for use by other modules: 
 
 export const useWeather = () => {
   return weather.slice()

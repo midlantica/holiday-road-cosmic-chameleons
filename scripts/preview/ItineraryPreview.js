@@ -15,6 +15,7 @@ const parkContentTarget = document.querySelector('.preview__park')
 const eateryContentTarget = document.querySelector('.preview__eatery')
 const attractionContentTarget = document.querySelector('.preview__attraction')
 const SaveItineraryContentTarget = document.querySelector('.button--saveItinerary')
+const weatherTarget = document.querySelector('.weatherContainer')
 
 // Create an object to store the selection state of each dropdown
 
@@ -39,18 +40,16 @@ const verifyUserSelection = () => {
 
 eventHub.addEventListener('parkChosen', (customEvent) => {
   const parksArray = useParks()
+  console.log(parksArray)
   const foundPark = parksArray.find(parkObj => {
     return parkObj.parkCode === (customEvent.detail.chosenPark)
   })
   parkContentTarget.innerHTML = Park(foundPark)
   userChoices.parkChosen = true
   verifyUserSelection()
-
-  // GET WEATHER API STUFF *AFTER* PARK CHOSEN
-  // Id of park equal to lat long to push into weatherObject + APIKey
-  getWeather().then(() => {
+  // Fetch weather API once 'parkChosen' custom event occurs
+  getWeather(foundPark.addresses[0].postalCode).then(() => {
     const weatherData = useWeather()
-    const weatherTarget = document.querySelector('.weatherContainer')
     weatherTarget.innerHTML += Weather(weatherData[0])
   })
 })
@@ -97,11 +96,6 @@ contentTarget.addEventListener("click", clickEvent => {
      const locatedAttraction = attractionsList.find(attractionObject => {
        return attractionObject.id === parseInt(attractionSelected)
      })
-
-
-
-
-
     // Store the data for the saved itinerary display and call function to render it 
     const newItinerary = {
       park: locatedPark.name,

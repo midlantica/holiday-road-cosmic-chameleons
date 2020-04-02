@@ -1,10 +1,12 @@
-import { Park } from '../parks/Park.js'
-import { Eatery } from '../eateries/Eatery.js'
 import { Attraction } from '../attractions/Attraction.js'
-import { useParks } from '../parks/ParkDataProvider.js'
-import { useEateries } from '../eateries/EateryDataProvider.js'
 import { useAttractions } from '../attractions/AttractionDataProvider.js'
+import { Eatery } from '../eateries/Eatery.js'
+import { useEateries } from '../eateries/EateryDataProvider.js'
 import { saveItinerary } from '../itineraries/ItineraryDataProvider.js'
+import { Park } from '../parks/Park.js'
+import { useParks } from '../parks/ParkDataProvider.js'
+import { Weather } from '../weather/Weather.js'
+import { getWeather, useWeather } from '../weather/WeatherDataProvider.js'
 import { SaveItineraryButton } from './SaveItineraryButton.js'
 
 const eventHub = document.querySelector('.container')
@@ -35,7 +37,7 @@ const verifyUserSelection = () => {
 // Change the state of the parkChosen/eateryChosen/attractionChosen event to true once the user has selected an option
 // Call the verifyUserSelection function to verify that all selections have been made; if yes, render button
 
-eventHub.addEventListener('parkChosen', customEvent => {
+eventHub.addEventListener('parkChosen', (customEvent) => {
   const parksArray = useParks()
   const foundPark = parksArray.find(parkObj => {
     return parkObj.parkCode === (customEvent.detail.chosenPark)
@@ -43,21 +45,29 @@ eventHub.addEventListener('parkChosen', customEvent => {
   parkContentTarget.innerHTML = Park(foundPark)
   userChoices.parkChosen = true
   verifyUserSelection()
+
+  // GET WEATHER API STUFF *AFTER* PARK CHOSEN
+  // Id of park equal to lat long to push into weatherObject + APIKey
+  getWeather().then(() => {
+    const weatherData = useWeather()
+    const weatherTarget = document.querySelector('.weatherContainer')
+    weatherTarget.innerHTML += Weather(weatherData[0])
+  })
 })
 
-eventHub.addEventListener('attractionChosen', customEvent => {
+eventHub.addEventListener('attractionChosen', (customEvent) => {
   const attractionsArray = useAttractions()
-  const foundAttraction = attractionsArray.find(attractionObj => {
+  const foundAttraction = attractionsArray.find((attractionObj) => {
     return attractionObj.id === parseInt(customEvent.detail.chosenAttraction)
   })
-  attractionContentTarget.innerHTML = Attraction(foundAttraction) 
-  userChoices.attractionChosen = true 
+  attractionContentTarget.innerHTML = Attraction(foundAttraction)
+  userChoices.attractionChosen = true
   verifyUserSelection()
 })
 
-eventHub.addEventListener('eateryChosen', customEvent => {
+eventHub.addEventListener('eateryChosen', (customEvent) => {
   const eateriesArray = useEateries()
-  const chosenEatery = eateriesArray.find(eateryObject => {
+  const chosenEatery = eateriesArray.find((eateryObject) => {
     return eateryObject.id === parseInt(customEvent.detail.chosenEatery)
   })
   eateryContentTarget.innerHTML = Eatery(chosenEatery)
@@ -98,7 +108,6 @@ contentTarget.addEventListener("click", clickEvent => {
       eatery: locatedEatery.businessName,
       attraction: locatedAttraction.name
     }
-  saveItinerary(newItinerary)
+    saveItinerary(newItinerary)
   }
 })
-

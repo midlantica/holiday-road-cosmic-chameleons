@@ -101,6 +101,12 @@
       "eatery": "St. Elmo Steak House",
       "attraction": "World’s Largest ‘Gone With the Wind’ Collection",
       "id": 17
+    },
+    {
+      "park": "African American Civil War Memorial",
+      "eatery": "Big Bob Gibson Bar-B-Que",
+      "attraction": "Snake World",
+      "id": 18
     }
   ]
 }

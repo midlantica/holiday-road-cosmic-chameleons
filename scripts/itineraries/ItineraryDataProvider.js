@@ -15,7 +15,6 @@ export const getItineraries = () => {
         })
 }
 
-
 export const saveItinerary = (newItinerary) => {
     fetch("http://localhost:3000/itineraries", {
         method: "POST",

@@ -39,8 +39,8 @@ const verifyUserSelection = () => {
 
 eventHub.addEventListener('parkChosen', (customEvent) => {
   const parksArray = useParks()
-  const foundPark = parksArray.find((parkObj) => {
-    return parkObj.id === customEvent.detail.chosenPark
+  const foundPark = parksArray.find(parkObj => {
+    return parkObj.parkCode === (customEvent.detail.chosenPark)
   })
   parkContentTarget.innerHTML = Park(foundPark)
   userChoices.parkChosen = true
@@ -77,16 +77,36 @@ eventHub.addEventListener('eateryChosen', (customEvent) => {
 
 // Create a click event that generates a new itinerary object to be saved to itineraries.json
 
-contentTarget.addEventListener('click', (clickEvent) => {
-  if (clickEvent.target.id === 'button--saveItinerary') {
-    const parkSelected = document.querySelector('#parkSelect').value
-    const eaterySelected = document.querySelector('#eaterySelect').value
-    const attractionSelected = document.querySelector('#attractionSelect').value
+contentTarget.addEventListener("click", clickEvent => {
+  if (clickEvent.target.id === "button--saveItinerary") {
+    const parkSelected = document.querySelector("#parkSelect").value
+    const eaterySelected = document.querySelector("#eaterySelect").value
+    const attractionSelected = document.querySelector("#attractionSelect").value
+    // Find the corresonding park object an grab its name 
+    const parksList = useParks()
+    const locatedPark = parksList.find(parkObject => {
+      return parkObject.parkCode === parkSelected
+    })
+     // Find the corresonding eatery object an grab its name 
+     const eateriesList = useEateries()
+     const locatedEatery = eateriesList.find(eateryObject => {
+       return eateryObject.id === parseInt(eaterySelected)
+     })
+     // Find the corresonding attraction object an grab its name 
+     const attractionsList = useAttractions()
+     const locatedAttraction = attractionsList.find(attractionObject => {
+       return attractionObject.id === parseInt(attractionSelected)
+     })
 
+
+
+
+
+    // Store the data for the saved itinerary display and call function to render it 
     const newItinerary = {
-      park: parkSelected,
-      eatery: eaterySelected,
-      attraction: attractionSelected
+      park: locatedPark.name,
+      eatery: locatedEatery.businessName,
+      attraction: locatedAttraction.name
     }
     saveItinerary(newItinerary)
   }

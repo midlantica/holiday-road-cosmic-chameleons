@@ -8,12 +8,10 @@ import { renderItinerary } from './itineraries/ItineraryList.js'
 import { getParks } from './parks/ParkDataProvider.js'
 import './parks/ParkDialog.js'
 import './preview/ItineraryPreview.js'
-import { getWeather } from './weather/WeatherProvider.js'
 
 getParks()
   .then(getEateries)
   .then(getAttractions)
   .then(ItineraryForm)
-  .then(getWeather)
 
 getItineraries().then(renderItinerary)

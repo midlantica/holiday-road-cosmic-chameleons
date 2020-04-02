@@ -6,6 +6,7 @@ import { saveItinerary } from '../itineraries/ItineraryDataProvider.js'
 import { Park } from '../parks/Park.js'
 import { useParks } from '../parks/ParkDataProvider.js'
 import { Weather } from '../weather/Weather.js'
+import { getWeather, useWeather } from '../weather/WeatherDataProvider.js'
 import { SaveItineraryButton } from './SaveItineraryButton.js'
 
 const eventHub = document.querySelector('.container')
@@ -46,7 +47,12 @@ eventHub.addEventListener('parkChosen', (customEvent) => {
   verifyUserSelection()
 
   // GET WEATHER API STUFF *AFTER* PARK CHOSEN
-  parkContentTarget.innerHTML += Weather(weatherObject)
+  // Id of park equal to lat long to push into weatherObject + APIKey
+  getWeather().then(() => {
+    const weatherData = useWeather()
+    const weatherTarget = document.querySelector('.weatherContainer')
+    weatherTarget.innerHTML += Weather(weatherData[0])
+  })
 })
 
 eventHub.addEventListener('attractionChosen', (customEvent) => {

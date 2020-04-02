@@ -1,4 +1,4 @@
-export const Eatery = eateryObject => {
+export const Eatery = (eateryObject) => {
   return `
     <h3 id="eateryName">${eateryObject.businessName}</h3>
     <p>${eateryObject.city}</p>
@@ -9,7 +9,7 @@ export const Eatery = eateryObject => {
 
 const eventHub = document.querySelector('.container')
 
-eventHub.addEventListener('click', clickEvent => {
+eventHub.addEventListener('click', (clickEvent) => {
   // Generate custom event
   if (clickEvent.target.id.startsWith('eateryDetailBtn--')) {
     const eateryId = clickEvent.target.id.split('--')[1]

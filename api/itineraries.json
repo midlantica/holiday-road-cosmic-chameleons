@@ -71,6 +71,36 @@
       "eatery": "2",
       "attraction": "2",
       "id": 12
+    },
+    {
+      "park": "afam",
+      "eatery": "1",
+      "attraction": "1",
+      "id": 13
+    },
+    {
+      "park": "Augusta Canal",
+      "eatery": "1",
+      "attraction": "3",
+      "id": 14
+    },
+    {
+      "park": "African American Civil War Memorial",
+      "eatery": "Big Bob Gibson Bar-B-Que",
+      "attraction": "6",
+      "id": 15
+    },
+    {
+      "park": "Dry Tortugas",
+      "eatery": "Buckhorn Exchange",
+      "attraction": "Snake World",
+      "id": 16
+    },
+    {
+      "park": "Fort Stanwix",
+      "eatery": "St. Elmo Steak House",
+      "attraction": "World’s Largest ‘Gone With the Wind’ Collection",
+      "id": 17
     }
   ]
 }

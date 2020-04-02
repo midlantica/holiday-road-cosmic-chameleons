@@ -2,20 +2,36 @@ header,
 footer {
   color: var(--white);
   background: var(--teal-900);
-  padding: 1em 1.5em;
+  padding: 1em 2.5em;
 }
 
 header {
-  position: fixed;
+  /* position: fixed; */
   /* bottom: 0; */
   width: 100%;
   box-shadow: 0 0px 6px 0px hsla(0, 0%, 0%, 0.5);
   background: linear-gradient(0deg, #002b23 0%, #004d40 50%, #004d40 98%, aqua 100%);
+  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Rocky_Mountain_National_Park_in_September_2011_-_view_from_Many_Parks_Curve.JPG/2560px-Rocky_Mountain_National_Park_in_September_2011_-_view_from_Many_Parks_Curve.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -375px;
+}
+
+@media (max-width: 700px) {
+  header {
+    background-position-y: -205px;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    background-position-y: -131px;
+  }
 }
 
 footer {
-  padding: 10px 20px;
-  position: fixed;
+  /* padding: 10px 20px; */
+  /* position: fixed; */
   bottom: 0;
   width: 100%;
   box-shadow: 0 0px 10px 0px hsla(0, 0%, 0%, 0.5);
@@ -27,7 +43,7 @@ footer {
 header h1 {
   margin: 0;
   padding: 0;
-  color: white !important;
+  color: hsla(170, 100%, 95%, 1) !important;
   font-weight: 700;
   letter-spacing: 0.04ch;
   text-shadow: 2px 2px 3px #00261f;
@@ -41,7 +57,7 @@ footer h4,
 footer h5 {
   margin: 0 0 0.25em;
   padding: 0;
-  color: white !important;
+  color: hsla(170, 100%, 95%, 1) !important;
   font-weight: 600;
   letter-spacing: 0.04ch;
   text-shadow: 2px 2px 3px #00261f;

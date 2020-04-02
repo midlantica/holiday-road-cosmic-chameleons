@@ -1,9 +1,10 @@
 export const Eatery = (eateryObject) => {
   return `
-    <h3 id="eateryName">${eateryObject.businessName}</h3>
-    <p>${eateryObject.city}</p>
-    <p>${eateryObject.state}</p>
+  <div class="box">
+    <h4 id="eateryName">${eateryObject.businessName}</h4>
+    <p>${eateryObject.city}, ${eateryObject.state}</p>
     <button id="eateryDetailBtn--${eateryObject.id}">Details</button>
+  </div>
   `
 }
 

@@ -2,10 +2,12 @@
 
 export const Park = (parkObject) => {
   return `
-        <h3>${parkObject.name}</h3>
+      <div class="box">
+        <h4>${parkObject.name}</h4>
         <p>${parkObject.states}</p>
         <div class="weatherContainer"></div>
         <button id="parkDetailBtn--${parkObject.parkCode}">Details</button>
+      </div>
     `
 }
 

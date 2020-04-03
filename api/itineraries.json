@@ -1,16 +1,22 @@
 {
   "itineraries": [
     {
-      "id": 1,
-      "park": "Park Name",
-      "eatery": "Eatery Name",
-      "attraction": "Attraction Name"
+      "park": "Belmont-Paul Women's Equality",
+      "eatery": "Club Paris",
+      "attraction": "Snake World",
+      "id": 2
     },
     {
-      "park": "African American Civil War Memorial",
-      "eatery": "Big Bob Gibson Bar-B-Que",
-      "attraction": "Giant Tattoo Needle",
-      "id": 2
+      "park": "Belmont-Paul Women's Equality",
+      "eatery": "El Charro Cafe",
+      "attraction": "Cabazon Dinosaurs",
+      "id": 3
+    },
+    {
+      "park": "Belmont-Paul Women's Equality",
+      "eatery": "El Charro Cafe",
+      "attraction": "Largest Fork in the US",
+      "id": 4
     }
   ]
 }

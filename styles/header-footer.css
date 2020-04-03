@@ -7,40 +7,19 @@ footer {
 }
 
 header {
-  /* position: fixed; */
-  /* bottom: 0; */
-  /* width: 100%; */
   box-shadow: 0 0px 6px 0px hsla(0, 0%, 0%, 0.5);
   background: url(./header-back-02.jpeg);
   background-repeat: no-repeat;
   background-size: 100% 320px;
   background-position: center;
-  /* background-position-y: -375px; */
   background-position-y: -6.3rem;
 }
 
-/* @media (max-width: 700px) {
-  header {
-    background-position-y: -205px;
-  }
-}
-
-@media (max-width: 400px) {
-  header {
-    background-position-y: -131px;
-  }
-} */
-
 footer {
-  /* padding: 10px 20px; */
-  /* position: fixed; */
   bottom: 0;
   width: 100%;
-  /* box-shadow: 0 0px 10px 0px hsla(0, 0%, 0%, 0.5); */
   background: linear-gradient(180deg, #98b3db 0%, #4771b2 50%, #183679 98%, aqua 100%);
 }
-
-/* >>>>>>>>>>>>>>> */
 
 header h1 {
   margin: 0;

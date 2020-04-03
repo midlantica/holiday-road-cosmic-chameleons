@@ -7,22 +7,34 @@
       "attraction": "Attraction Name"
     },
     {
-      "park": "Cape Cod",
-      "eatery": "Buckhorn Exchange",
-      "attraction": "White House Replica",
+      "park": "African American Civil War Memorial",
+      "eatery": "Big Bob Gibson Bar-B-Que",
+      "attraction": "Giant Tattoo Needle",
       "id": 2
     },
     {
-      "park": "Augusta Canal",
+      "park": "African American Civil War Memorial",
       "eatery": "Big Bob Gibson Bar-B-Que",
-      "attraction": "Giant Tattoo Needle",
+      "attraction": "Snake World",
       "id": 3
     },
     {
       "park": "Augusta Canal",
-      "eatery": "Big Bob Gibson Bar-B-Que",
-      "attraction": "Giant Tattoo Needle",
+      "eatery": "Club Paris",
+      "attraction": "Snake World",
       "id": 4
+    },
+    {
+      "park": "Augusta Canal",
+      "eatery": "Big Bob Gibson Bar-B-Que",
+      "attraction": "Elvis Memorial Chapel",
+      "id": 5
+    },
+    {
+      "park": "African American Civil War Memorial",
+      "eatery": "Club Paris",
+      "attraction": "Avery’s Beverages",
+      "id": 6
     }
   ]
 }

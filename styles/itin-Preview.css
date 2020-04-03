@@ -1,0 +1,84 @@
+.selector__park {
+  margin: 0 0 1em;
+}
+.selector__eatery {
+  margin: 0 0 1em;
+}
+.selector__attraction {
+  margin: 0 0 1em;
+}
+
+.preview__park {
+  width: 100%;
+  margin: 0 0 1em;
+}
+
+.weatherContainer {
+  width: 100%;
+  margin: 0 0 1em;
+}
+
+.weatherContainer h3 {
+  width: 100%;
+  margin: 0 0 0.3em;
+  text-align: left;
+  font-size: 1em;
+}
+.weatherContainer p {
+  width: 100%;
+  margin: 0 0 0em;
+  text-align: left;
+}
+
+.preview__eatery {
+  width: 100%;
+  margin: 0 0 1em;
+}
+
+.preview__attraction {
+  width: 100%;
+  margin: 0 0 1em;
+}
+
+.preview__park h4,
+.preview__eatery h4,
+.preview__attraction h4 {
+  font-weight: 600;
+  text-align: left;
+}
+
+.preview__park button,
+.preview__eatery button,
+.preview__attraction button {
+  font-weight: 500;
+  font-size: 1em;
+  padding: 0.3rem 0.5rem 0.2em;
+  border: none;
+  background: var(--accent);
+  color: white;
+  text-align: left;
+}
+
+.preview__park button:hover,
+.preview__eatery button:hover,
+.preview__attraction button:hover {
+  background: var(--accent-dk);
+  color: white;
+}
+
+.preview__park p,
+.preview__eatery p,
+.preview__attraction p {
+  margin: 0 0 0.5em;
+  text-align: left;
+}
+
+#button--saveItinerary {
+  color: white !important;
+  background: var(--accent);
+}
+
+#button--saveItinerary:hover {
+  color: white;
+  background: var(--accent-dk);
+}

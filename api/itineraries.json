@@ -11,24 +11,6 @@
       "eatery": "Big Bob Gibson Bar-B-Que",
       "attraction": "Giant Tattoo Needle",
       "id": 2
-    },
-    {
-      "park": "African American Civil War Memorial",
-      "eatery": "Big Bob Gibson Bar-B-Que",
-      "attraction": "Snake World",
-      "id": 3
-    },
-    {
-      "park": "Augusta Canal",
-      "eatery": "Club Paris",
-      "attraction": "Snake World",
-      "id": 4
-    },
-    {
-      "park": "Augusta Canal",
-      "eatery": "Big Bob Gibson Bar-B-Que",
-      "attraction": "Elvis Memorial Chapel",
-      "id": 5
     }
   ]
 }

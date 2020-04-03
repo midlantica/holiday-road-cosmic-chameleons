@@ -7,106 +7,10 @@
       "attraction": "Attraction Name"
     },
     {
-      "park": "08EFF7E4-0FE4-4402-B23A-124EB8AAC249",
-      "eatery": "11",
-      "attraction": "12",
-      "id": 2
-    },
-    {
-      "park": "E0F4D5E3-3E4A-4345-B86A-1B0CAD7461F1",
-      "eatery": "7",
-      "attraction": "7",
-      "id": 3
-    },
-    {
-      "park": "E7E4E103-5FA9-45AC-8843-05DE554CDBB7",
-      "eatery": "4",
-      "attraction": "4",
-      "id": 4
-    },
-    {
-      "park": "E7E4E103-5FA9-45AC-8843-05DE554CDBB7",
-      "eatery": "4",
-      "attraction": "4",
-      "id": 5
-    },
-    {
-      "park": "E7E4E103-5FA9-45AC-8843-05DE554CDBB7",
-      "eatery": "4",
-      "attraction": "4",
-      "id": 6
-    },
-    {
-      "park": "1A47416F-DAA3-4137-9F30-14AF86B4E547",
-      "eatery": "1",
-      "attraction": "1",
-      "id": 7
-    },
-    {
-      "park": "E7E4E103-5FA9-45AC-8843-05DE554CDBB7",
-      "eatery": "2",
-      "attraction": "4",
-      "id": 8
-    },
-    {
-      "park": "1A47416F-DAA3-4137-9F30-14AF86B4E547",
-      "eatery": "1",
-      "attraction": "2",
-      "id": 9
-    },
-    {
-      "park": "6B1D053D-714F-46D1-B410-04BE868F14C1",
-      "eatery": "2",
-      "attraction": "2",
-      "id": 10
-    },
-    {
-      "park": "E7E4E103-5FA9-45AC-8843-05DE554CDBB7",
-      "eatery": "3",
-      "attraction": "8",
-      "id": 11
-    },
-    {
-      "park": "1A47416F-DAA3-4137-9F30-14AF86B4E547",
-      "eatery": "2",
-      "attraction": "2",
-      "id": 12
-    },
-    {
-      "park": "afam",
-      "eatery": "1",
-      "attraction": "1",
-      "id": 13
-    },
-    {
-      "park": "Augusta Canal",
-      "eatery": "1",
-      "attraction": "3",
-      "id": 14
-    },
-    {
-      "park": "African American Civil War Memorial",
-      "eatery": "Big Bob Gibson Bar-B-Que",
-      "attraction": "6",
-      "id": 15
-    },
-    {
-      "park": "Dry Tortugas",
+      "park": "Cape Cod",
       "eatery": "Buckhorn Exchange",
-      "attraction": "Snake World",
-      "id": 16
-    },
-    {
-      "park": "Fort Stanwix",
-      "eatery": "St. Elmo Steak House",
-      "attraction": "World’s Largest ‘Gone With the Wind’ Collection",
-      "id": 17
-    },
-    {
-      "park": "African American Civil War Memorial",
-      "eatery": "Big Bob Gibson Bar-B-Que",
-      "attraction": "Snake World",
-      "id": 18
+      "attraction": "White House Replica",
+      "id": 2
     }
   ]
 }

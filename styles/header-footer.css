@@ -11,10 +11,10 @@ header {
   width: 100%;
   box-shadow: 0 0px 6px 0px hsla(0, 0%, 0%, 0.5);
   background: linear-gradient(0deg, #002b23 0%, #004d40 50%, #004d40 98%, aqua 100%);
-  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Rocky_Mountain_National_Park_in_September_2011_-_view_from_Many_Parks_Curve.JPG/2560px-Rocky_Mountain_National_Park_in_September_2011_-_view_from_Many_Parks_Curve.JPG);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: -375px;
+  /* background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Rocky_Mountain_National_Park_in_September_2011_-_view_from_Many_Parks_Curve.JPG/2560px-Rocky_Mountain_National_Park_in_September_2011_-_view_from_Many_Parks_Curve.JPG); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* background-position-y: -375px; */
 }
 
 @media (max-width: 700px) {

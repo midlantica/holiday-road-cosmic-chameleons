@@ -3,6 +3,7 @@
 @import './tyography.css';
 @import './header-footer.css';
 @import './buttons.css';
+@import './scrollbar.css';
 
 :root {
   --font-head: 'Baloo 2', sans-serif;

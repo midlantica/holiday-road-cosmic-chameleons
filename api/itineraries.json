@@ -17,6 +17,12 @@
       "eatery": "Club Paris",
       "attraction": "Giant Tattoo Needle",
       "id": 14
+    },
+    {
+      "park": "Charles Pinckney",
+      "eatery": "El Charro Cafe",
+      "attraction": "Largest Fork in the US",
+      "id": 15
     }
   ]
 }

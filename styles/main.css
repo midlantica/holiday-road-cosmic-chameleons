@@ -113,6 +113,23 @@ aside {
   margin: 0 0 1em;
 }
 
+.weatherContainer {
+  width: 100%;
+  margin: 0 0 1em;
+}
+
+.weatherContainer h3 {
+  width: 100%;
+  margin: 0 0 0.3em;
+  text-align: left;
+  font-size: 1em;
+}
+.weatherContainer p {
+  width: 100%;
+  margin: 0 0 0em;
+  text-align: left;
+}
+
 .preview__eatery {
   width: 100%;
   margin: 0 0 1em;
@@ -187,7 +204,6 @@ aside {
 .itinerariesContainer {
   height: 250px;
   overflow: auto;
-  margin-top: auto;
   background: whitesmoke;
   padding: 0.5em;
   box-shadow: inset 2px 2px 4px 0px #00000042;

@@ -26,6 +26,6 @@ const ParkDialog = (parkObject) => {
         <p>${parkObject.addresses[0].city}, ${parkObject.states}</p>
         <p>${parkObject.latLong}</p>
         <p>${parkObject.description}</p>
-        <a><a href="${parkObject.url}">Click here for official park info</a></p>
+        <p><a href="${parkObject.url}" target="_blank">Click here for official park info</a></p>
     `
 }

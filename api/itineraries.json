@@ -7,22 +7,16 @@
       "attraction": "Attraction Name"
     },
     {
-      "park": "afam",
-      "eatery": "1",
-      "attraction": "1",
-      "id": 13
+      "park": "Cape Cod",
+      "eatery": "Buckhorn Exchange",
+      "attraction": "White House Replica",
+      "id": 2
     },
     {
       "park": "Augusta Canal",
-      "eatery": "Club Paris",
+      "eatery": "Big Bob Gibson Bar-B-Que",
       "attraction": "Giant Tattoo Needle",
-      "id": 14
-    },
-    {
-      "park": "Charles Pinckney",
-      "eatery": "El Charro Cafe",
-      "attraction": "Largest Fork in the US",
-      "id": 15
+      "id": 3
     }
   ]
 }

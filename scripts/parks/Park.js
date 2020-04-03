@@ -4,7 +4,7 @@ export const Park = (parkObject) => {
   return `
       <div class="box">
         <h4>${parkObject.name}</h4>
-        <p>${parkObject.states}</p>
+        <p>${parkObject.addresses[0].city}, ${parkObject.states}</p>
         <div class="weatherContainer"></div>
         <button id="parkDetailBtn--${parkObject.parkCode}">Details</button>
       </div>

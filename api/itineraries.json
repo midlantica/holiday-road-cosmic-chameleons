@@ -17,54 +17,6 @@
       "eatery": "Big Bob Gibson Bar-B-Que",
       "attraction": "Snake World",
       "id": 3
-    },
-    {
-      "park": "Augusta Canal",
-      "eatery": "Club Paris",
-      "attraction": "Snake World",
-      "id": 4
-    },
-    {
-      "park": "Augusta Canal",
-      "eatery": "Big Bob Gibson Bar-B-Que",
-      "attraction": "Elvis Memorial Chapel",
-      "id": 5
-    },
-    {
-      "park": "African American Civil War Memorial",
-      "eatery": "Club Paris",
-      "attraction": "Avery’s Beverages",
-      "id": 6
-    },
-    {
-      "park": "Augusta Canal",
-      "eatery": "El Charro Cafe",
-      "attraction": "Cabazon Dinosaurs",
-      "id": 7
-    },
-    {
-      "park": "African American Civil War Memorial",
-      "eatery": "McClard's BBQ",
-      "attraction": "Avery’s Beverages",
-      "id": 8
-    },
-    {
-      "park": "African American Civil War Memorial",
-      "eatery": "Marge's Pancake House",
-      "attraction": "Giant Tattoo Needle",
-      "id": 9
-    },
-    {
-      "park": "Belmont-Paul Women's Equality",
-      "eatery": "Big Bob Gibson Bar-B-Que",
-      "attraction": "Fountain of Youth",
-      "id": 10
-    },
-    {
-      "park": "Belmont-Paul Women's Equality",
-      "eatery": "Big Bob Gibson Bar-B-Que",
-      "attraction": "Elvis Memorial Chapel",
-      "id": 11
     }
   ]
 }

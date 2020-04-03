@@ -1,7 +1,8 @@
 import { Itinerary } from './Itinerary.js'
 import { useItineraries, deleteItinerary } from './ItineraryDataProvider.js'
 
-const contentTarget = document.querySelector(".itinerariesContainer");
+let contentTarget = document.querySelector(".itinerariesContainer");
+const eventHub = document.querySelector(".container")
 
 export const renderItinerary = () => {
     const itineraryEntries = useItineraries();
@@ -16,4 +17,9 @@ contentTarget.addEventListener("click", clickEvent => {
         const [prefix, itineraryID] = clickEvent.target.id.split("--")
         deleteItinerary(itineraryID)
     }
+})
+
+eventHub.addEventListener("saveItinerary", customEvent => {
+    contentTarget.innerHTML = ""
+    renderItinerary()
 })

@@ -4,7 +4,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--teal900);
+  color: var(--indigo900);
   font-family: var(--font-head);
   font-weight: 500;
   margin: 1em 0 0.4em 0;
@@ -31,7 +31,7 @@ li {
 }
 
 h1 {
-  font-size: 2.0rem;
+  font-size: 2rem;
 }
 h2 {
   font-size: 1.75rem;

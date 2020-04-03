@@ -5,6 +5,7 @@ export const Itinerary = (itineraryObj) => {
       <p>Park: ${itineraryObj.park}</p>
       <p>Attraction: ${itineraryObj.attraction}</p>
       <p>Eatery: ${itineraryObj.eatery}</p>
+      <p><button id="deleteItinBtn--${itineraryObj.id}">Delete Itinerary</button></p>
 </div>
   `
 }

@@ -1,8 +1,5 @@
 import { Itinerary } from './Itinerary.js'
-import { useItineraries } from './ItineraryDataProvider.js'
-import { useParks } from '../parks/ParkDataProvider.js';
-import { useEateries } from '../eateries/EateryDataProvider.js';
-import { useAttractions } from '../attractions/AttractionDataProvider.js';
+import { useItineraries, deleteItinerary } from './ItineraryDataProvider.js'
 
 const contentTarget = document.querySelector(".itinerariesContainer");
 
@@ -13,3 +10,10 @@ export const renderItinerary = () => {
         contentTarget.innerHTML += newItinerary
     }
 }
+
+contentTarget.addEventListener("click", clickEvent => {
+    if (clickEvent.target.id.startsWith("deleteItinBtn--")) {
+        const [prefix, itineraryID] = clickEvent.target.id.split("--")
+        deleteItinerary(itineraryID)
+    }
+})

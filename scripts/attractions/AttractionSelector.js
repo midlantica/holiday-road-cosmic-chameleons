@@ -9,7 +9,7 @@ export const AttractionSelector = () => {
   const attractionsCollection = useAttractions()
   return (contentTarget.innerHTML = `
         <select id="attractionSelect" class="dropdown">
-            <option value="0">Pick an Attraction</option>
+            <option value="0">Pick an Attraction...</option>
             ${attractionsCollection.map((singleAttraction) => {
               return `<option value="${singleAttraction.id}">${singleAttraction.name}</option>`
             })}

@@ -27,6 +27,14 @@ export const saveItinerary = (newItinerary) => {
     .then(dispatchSavedItinerary)
 }
 
+export const deleteItinerary = (itineraryId) => {
+    return fetch(`http://localhost:3000/itineraries/${itineraryId}`, {
+        method: "DELETE"
+    })
+        .then(getItineraries)
+        .then(dispatchSavedItinerary)
+}
+
 export const useItineraries = () => {
     return itineraries.slice()
 }

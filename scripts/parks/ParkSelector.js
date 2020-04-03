@@ -9,7 +9,7 @@ export const ParkSelector = () => {
   const parksCollection = useParks()
   return (contentTarget.innerHTML = `
         <select id="parkSelect" class="dropdown">
-            <option value="0">Pick a Park</option>
+            <option value="0">Pick a Park...</option>
             ${parksCollection.map((singlePark) => {
               return `<option value="${singlePark.parkCode}">${singlePark.name}</option>`
             })}

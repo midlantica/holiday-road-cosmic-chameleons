@@ -4,7 +4,7 @@ export const Attraction = (attractionObject) => {
   return `
   <div class="box">
     <h4 id="attractionName">${attractionObject.name}</h4>
-    <p>${attractionObject.state}</p>
+    <p>${attractionObject.city}, ${attractionObject.state}</p>
     <button id="attraction--${attractionObject.id}">Details</button>
   </div>
   `

@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/main.css" />
-    <title>Holiday Road</title>
-  </head>
 
-  <body>
-    <header class="headerContainer"></header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/bda16bb3e6.js" crossorigin="anonymous"></script>
+  <title>Holiday Road</title>
+</head>
 
-    <main class="container">
-      <aside>
-        <section class="selectorContainer">
-          <div class="selector__park"></div>
-          <div class="selector__eatery"></div>
-          <div class="selector__attraction"></div>
-        </section>
-        <section class="itinerariesContainer"></section>
-      </aside>
+<body>
+  <header class="headerContainer">
+    <h1><i class="fas fa-hiking"></i>Holiday Road</h1>
+  </header>
 
-      <section class="previewContainer">
+  <main class="container">
+    <aside class="box">
+      <h3>Select Itinerary</h3>
+      <section class="selectorContainer">
+        <div class="selector__park"></div>
+        <div class="selector__eatery"></div>
+        <div class="selector__attraction"></div>
+      </section>
+      <section class="itinerariesContainer"></section>
+    </aside>
+
+    <section class="previewContainer box">
+      <h3>Preview Itinerary</h3>
+      <div class="flexWrapper">
         <div class="preview__park"></div>
         <div class="weatherContainer"></div>
         <div class="preview__eatery"></div>
         <div class="preview__attraction"></div>
-        <div class="button--saveItinerary"></div>
-        <dialog class="dialog__eatery"></dialog>
-        <dialog class="dialog__attraction"></dialog>
-        <dialog class="dialog__park"></dialog>
-      </section>
+      </div>
+      <div class="button--saveItinerary"></div>
+      <dialog class="dialog__eatery"></dialog>
+      <dialog class="dialog__attraction"></dialog>
+      <dialog class="dialog__park"></dialog>
+    </section>
+  </main>
 
+  <footer class="footerContainer">
+    <h4><i class="fas fa-hiking marRH"></i>Holiday Road</h4>
+  </footer>
 
-    </main>
+  <script type="module" src="./scripts/main.js"></script>
+</body>
 
-    <footer class="footerContainer"></footer>
-
-    <script type="module" src="./scripts/main.js"></script>
-  </body>
 </html>

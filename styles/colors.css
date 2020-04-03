@@ -1,0 +1,6 @@
+:root {
+  --primary: var(--indigo900);
+  --text-color: var(--dark);
+  --accent: hsl(14, 100%, 64%);
+  --accent-dk: hsl(14, 100%, 40%);
+}

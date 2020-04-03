@@ -1,0 +1,31 @@
+.dialog__park,
+.dialog__eatery,
+.dialog__attraction {
+  text-align: left;
+}
+
+dialog {
+  margin: 0 auto;
+  width: 50%;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 2em 3em 2.25em;
+  box-shadow: 7px 6px 16px 0px #0000006b;
+}
+
+dialog h3 {
+  font-size: 1.3em;
+  line-height: 1.5;
+  margin: 0 0 0.5em;
+}
+
+dialog p {
+  font-size: 0.9em;
+  line-height: 1.5;
+  margin: 0 0 0.5em;
+  color: #232323;
+}
+
+dialog p a {
+  /* text-align: left !important; */
+}

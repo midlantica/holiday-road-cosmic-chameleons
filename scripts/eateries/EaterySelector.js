@@ -4,14 +4,14 @@ import { useEateries } from './EateryDataProvider.js'
 const eventHub = document.querySelector('.container')
 const contentTarget = document.querySelector('.selector__eatery')
 
-contentTarget.addEventListener('change', changeEvent => {
+contentTarget.addEventListener('change', (changeEvent) => {
   if (changeEvent.target.id === 'eaterySelect') {
     const theEateryThatWasChosen = changeEvent.target.value
 
     const eateryChosenEvent = new CustomEvent('eateryChosen', {
       detail: {
-        chosenEatery: theEateryThatWasChosen
-      }
+        chosenEatery: theEateryThatWasChosen,
+      },
     })
 
     eventHub.dispatchEvent(eateryChosenEvent)
@@ -23,11 +23,11 @@ export const EaterySelector = () => {
   // Get all Eateries from application state
   const eateries = useEateries()
 
-  const render = eateriesCollection => {
+  const render = (eateriesCollection) => {
     contentTarget.innerHTML = `
       <select class="dropdown" id="eaterySelect">
-        <option value="0">Please select an eatery...</option>
-        ${eateriesCollection.map(singleEatery => {
+        <option value="0">Pick an Eatery...</option>
+        ${eateriesCollection.map((singleEatery) => {
           return `<option value="${singleEatery.id}">${singleEatery.businessName}</option>`
         })}
       </select>

@@ -1,0 +1,14 @@
+button {
+  font-weight: 600;
+  background: white;
+  font-size: 1em;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.5rem 0.9rem;
+}
+
+button:hover {
+  color: white;
+  background: var(--accent-dk);
+  border: 1px solid var(--accent-dk);
+}

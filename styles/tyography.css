@@ -1,0 +1,50 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--indigo900);
+  font-family: var(--font-head);
+  font-weight: 500;
+  margin: 1em 0 0.4em 0;
+}
+
+h2:first-of-type,
+h1:first-of-type,
+h3:first-of-type,
+h4:first-of-type,
+h5:first-of-type,
+h6:first-of-type {
+  margin-top: 0em;
+}
+
+p,
+ol,
+ul,
+li {
+  font-family: var(--font-copy);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 1em 0 0.5em 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.9rem;
+}
+h6 {
+  font-size: 0.85rem;
+}

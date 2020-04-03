@@ -1,16 +1,18 @@
 // Exports a function that renders the HTML for the attraction preview
 
-export const Attraction = attractionObject => {
+export const Attraction = (attractionObject) => {
   return `
-    <h3 id="attractionName">${attractionObject.name}</h3>
+  <div class="box">
+    <h4 id="attractionName">${attractionObject.name}</h4>
     <p>${attractionObject.state}</p>
     <button id="attraction--${attractionObject.id}">Details</button>
+  </div>
   `
 }
 
 const eventHub = document.querySelector('.container')
 
-eventHub.addEventListener('click', clickEvent => {
+eventHub.addEventListener('click', (clickEvent) => {
   // Generate custom event
   if (clickEvent.target.id.startsWith('attraction--')) {
     const attractionId = clickEvent.target.id.split('--')[1]

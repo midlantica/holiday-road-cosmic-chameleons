@@ -11,6 +11,18 @@
       "eatery": "Buckhorn Exchange",
       "attraction": "White House Replica",
       "id": 2
+    },
+    {
+      "park": "Augusta Canal",
+      "eatery": "Big Bob Gibson Bar-B-Que",
+      "attraction": "Giant Tattoo Needle",
+      "id": 3
+    },
+    {
+      "park": "Augusta Canal",
+      "eatery": "Big Bob Gibson Bar-B-Que",
+      "attraction": "Giant Tattoo Needle",
+      "id": 4
     }
   ]
 }

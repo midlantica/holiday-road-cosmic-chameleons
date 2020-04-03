@@ -76,6 +76,7 @@ aside {
 .previewContainer {
   width: 70%;
   text-align: center;
+  min-height: 560.11px;
 }
 
 @media (max-width: 700px) {
@@ -167,6 +168,12 @@ aside {
   font-weight: 600 !important;
 }
 
+@media (max-width: 700px) {
+  .box h3 {
+    text-align: left;
+  }
+}
+
 #button--saveItinerary {
   color: white !important;
   background: var(--accent);
@@ -185,23 +192,27 @@ aside {
   padding: 0.5em;
   box-shadow: inset 2px 2px 4px 0px #00000042;
   border-radius: 4px;
+  border: 1px solid hsla(0, 0%, 0%, 0.05);
 }
 
 .itinerariesContainer .itinerary {
+  margin: 0 0 0.3em;
+  padding: 0.75em 0.75em 0.5em;
 }
 
 .itinerariesContainer .itinerary h3 {
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 600;
   line-height: 1.2;
-  margin: 0 0 0.25em;
+  margin: 0 0 0.2em;
 }
 
 .itinerariesContainer .itinerary p {
-  font-size: 0.85em;
+  font-size: 0.8em;
   font-weight: 500;
   margin: 0 0 0em;
-  line-height: 1.5;
+  line-height: 1.4;
+  color: rgb(26, 26, 26);
 }
 
 .itinerariesContainer .itinerary p:last-of-type {

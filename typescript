@@ -1,0 +1,78 @@
+Script started on Thu Apr  2 13:59:13 2020
+]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons]2;crystalelsey@Crystals-MacBook-Pro]1;..ic-chameleons]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons[0m[27m[24m[J[01;32m➜  [36mholiday-road-cosmic-chameleons[00m [01;34mgit:([31mce-weather-api[34m) [33m✗[00m [K[?1h=[?2004hsscripts[1m/[0m[0m [?1l>[?2004l
+]2;scripts]1;scripts[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts]2;crystalelsey@Crystals-MacBook-Pro]1;..leons/scripts]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mce-weather-api[34m) [33m✗[00m [K[?1h=[?2004h[7mcp .Settings.js Settings.js[27m[27D[27mc[27mp[27m [27m.[27mS[27me[27mt[27mt[27mi[27mn[27mg[27ms[27m.[27mj[27ms[27m [27mS[27me[27mt[27mt[27mi[27mn[27mg[27ms[27m.[27mj[27ms[?1l>[?2004l
+]2;cp .Settings.js Settings.js]1;cpcp: .Settings.js: No such file or directory
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts]2;crystalelsey@Crystals-MacBook-Pro]1;..leons/scripts]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts[0m[27m[24m[J[01;31m➜  [36mscripts[00m [01;34mgit:([31mce-weather-api[34m) [33m✗[00m [K[?1h=[?2004hggit checkout master[?1l>[?2004l
+]2;git checkout master]1;gitM	index.html
+M	scripts/attractions/Attraction.js
+M	scripts/preview/ItineraryPreview.js
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts]2;crystalelsey@Crystals-MacBook-Pro]1;..leons/scripts]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h.../[?1l>[?2004l
+]2;../]1;../[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons]2;crystalelsey@Crystals-MacBook-Pro]1;..ic-chameleons]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons[0m[27m[24m[J[01;32m➜  [36mholiday-road-cosmic-chameleons[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004hggit pull origin master[?1l>[?2004l
+]2;git pull origin master]1;gitremote: Enumerating objects: 6, done.[K
+remote: Counting objects:  16% (1/6)[Kremote: Counting objects:  33% (2/6)[Kremote: Counting objects:  50% (3/6)[Kremote: Counting objects:  66% (4/6)[Kremote: Counting objects:  83% (5/6)[Kremote: Counting objects: 100% (6/6)[Kremote: Counting objects: 100% (6/6), done.[K
+remote: Compressing objects:  50% (1/2)[Kremote: Compressing objects: 100% (2/2)[Kremote: Compressing objects: 100% (2/2), done.[K
+remote: Total 4 (delta 2), reused 4 (delta 2), pack-reused 0[K
+Unpacking objects:  25% (1/4)Unpacking objects:  50% (2/4)Unpacking objects:  75% (3/4)Unpacking objects: 100% (4/4)Unpacking objects: 100% (4/4), 381 bytes | 20.00 KiB/s, done.
+From github.com:nss-day-cohort-39/holiday-road-cosmic-chameleons
+ * branch            master     -> FETCH_HEAD
+   e4c72b3..a92944e  master     -> origin/master
+Updating e4c72b3..a92944e
+Fast-forward
+ scripts/.Settings.js | 5 [32m+++++[m
+ 1 file changed, 5 insertions(+)
+ create mode 100644 scripts/.Settings.js
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons]2;crystalelsey@Crystals-MacBook-Pro]1;..ic-chameleons]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons[0m[27m[24m[J[01;32m➜  [36mholiday-road-cosmic-chameleons[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsREADME.md              parks.json             [1m[36mstyles[39;49m[0m
+[1m[36mapi[39;49m[0m                    [1m[36mpersonas[39;49m[0m               typescript
+index.html             [1m[36mscripts[39;49m[0m
+itineraries.json       [1m[36msettings (don't touch)[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons]2;crystalelsey@Crystals-MacBook-Pro]1;..ic-chameleons]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons[0m[27m[24m[J[01;32m➜  [36mholiday-road-cosmic-chameleons[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004hccdc  sscrp 
+[0mSCREEN_NO      screen         script                                   
+[JSCRIPT         [Jscreencapture  [J[1;31mscripts[0m/       [J                          [A[A[0m[27m[24m[49Cscr[Kipts[1m/[0m[0m [?1l>[?2004l
+[J]2;scripts]1;scripts[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts]2;crystalelsey@Crystals-MacBook-Pro]1;..leons/scripts]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;ls[1m[36mattractions[39;49m[0m [1m[36meateries[39;49m[0m    main.js     [1m[36mparks[39;49m[0m       [1m[36mweather[39;49m[0m
+[1m[36mdirections[39;49m[0m  [1m[36mitineraries[39;49m[0m [1m[36mnavs[39;49m[0m        [1m[36mpreview[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts]2;crystalelsey@Crystals-MacBook-Pro]1;..leons/scripts]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004h[7mcp .Settings.js Settings.js[27m[27D[27mc[27mp[27m [27m.[27mS[27me[27mt[27mt[27mi[27mn[27mg[27ms[27m.[27mj[27ms[27m [27mS[27me[27mt[27mt[27mi[27mn[27mg[27ms[27m.[27mj[27ms[?1l>[?2004l
+]2;cp .Settings.js Settings.js]1;cp[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts]2;crystalelsey@Crystals-MacBook-Pro]1;..leons/scripts]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsSettings.js [1m[36mdirections[39;49m[0m  [1m[36mitineraries[39;49m[0m [1m[36mnavs[39;49m[0m        [1m[36mpreview[39;49m[0m
+[1m[36mattractions[39;49m[0m [1m[36meateries[39;49m[0m    main.js     [1m[36mparks[39;49m[0m       [1m[36mweather[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts]2;crystalelsey@Crystals-MacBook-Pro]1;..leons/scripts]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=[?2004hggit checkout ce-
+[0mce-attraction-preview        ce-parks-api               
+ce-code-test-branch          ce-save-itinerary-btn      
+ce-delete-itinerary-button   ce-weather-api             
+[Jce-initial-boilerplate       [J                           [4A[0m[27m[24m[26Cgit checkout ce-[Kweater
+[J[A[48C  hear  r-api [1m [0m[0m [?1l>[?2004l
+[J]2;git checkout ce-weather-api]1;gitM	index.html
+M	scripts/attractions/Attraction.js
+M	scripts/preview/ItineraryPreview.js
+Switched to branch 'ce-weather-api'
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts]2;crystalelsey@Crystals-MacBook-Pro]1;..leons/scripts]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mce-weather-api[34m) [33m✗[00m [K[?1h=[?2004hggit merge master[?1l>[?2004l
+]2;git merge master]1;gitUpdating e4c72b3..a92944e
+Fast-forward
+ scripts/.Settings.js | 5 [32m+++++[m
+ 1 file changed, 5 insertions(+)
+ create mode 100644 scripts/.Settings.js
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts]2;crystalelsey@Crystals-MacBook-Pro]1;..leons/scripts]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mce-weather-api[34m) [33m✗[00m [K[?1h=[?2004hggit checkout -b  ce-delete-itinerary-button [1m [0m[0m [?1l>[?2004l
+]2;git checkout ce-delete-itinerary-button]1;gitM	index.html
+M	scripts/attractions/Attraction.js
+M	scripts/preview/ItineraryPreview.js
+Switched to branch 'ce-delete-itinerary-button'
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts]2;crystalelsey@Crystals-MacBook-Pro]1;..leons/scripts]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mce-delete-itinerary-button[34m) [33m✗[00m [K[?1h=[?2004hggit merge master[?1l>[?2004l
+]2;git merge master]1;gitUpdating e4c72b3..a92944e
+Fast-forward
+ scripts/.Settings.js | 5 [32m+++++[m
+ 1 file changed, 5 insertions(+)
+ create mode 100644 scripts/.Settings.js
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts]2;crystalelsey@Crystals-MacBook-Pro]1;..leons/scripts]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mce-delete-itinerary-button[34m) [33m✗[00m [K[?1h=[?2004hggit checkout ce-s weather-api [1m [0m[0m [?1l>[?2004l
+]2;git checkout ce-weather-api]1;gitM	index.html
+M	scripts/attractions/Attraction.js
+M	scripts/preview/ItineraryPreview.js
+Switched to branch 'ce-weather-api'
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts]2;crystalelsey@Crystals-MacBook-Pro]1;..leons/scripts]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mce-weather-api[34m) [33m✗[00m [K[?1h=[?2004hcclear[?1l>[?2004l
+]2;clear]1;clear[H[2J[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts]2;crystalelsey@Crystals-MacBook-Pro]1;..leons/scripts]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mce-weather-api[34m) [33m✗[00m [K[?1h=[?2004h.../[?1l>[?2004l
+]2;../]1;../[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons]2;crystalelsey@Crystals-MacBook-Pro]1;..ic-chameleons]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/holiday-road-cosmic-chameleons[0m[27m[24m[J[01;32m➜  [36mholiday-road-cosmic-chameleons[00m [01;34mgit:([31mce-weather-api[34m) [33m✗[00m [K[?1h=[?2004h.../[?1l>[?2004l
+]2;../]1;../[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace]2;crystalelsey@Crystals-MacBook-Pro]1;~/workspace]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace[0m[27m[24m[J[01;32m➜  [36mworkspace[00m [K[?1h=[?2004hgglassdale[1m/[0m[0m [?1l>[?2004l
+]2;glassdale]1;glassdale[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/glassdale]2;crystalelsey@Crystals-MacBook-Pro]1;..ace/glassdale]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/glassdale[0m[27m[24m[J[01;32m➜  [36mglassdale[00m [01;34mgit:([31mce-hide-criminal-button[34m) [33m✗[00m [K[?1h=[?2004hccode .[?1l>[?2004l
+]2;code .]1;code[1m[7m%[27m[1m[0m                                                                                ]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/glassdale]2;crystalelsey@Crystals-MacBook-Pro]1;..ace/glassdale]7;file://Crystals-MacBook-Pro.local/Users/crystalelsey/workspace/glassdale[0m[27m[24m[J[01;32m➜  [36mglassdale[00m [01;34mgit:([31mce-hide-criminal-button[34m) [33m✗[00m [K[?1h=[?2004h

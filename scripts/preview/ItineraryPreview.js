@@ -15,8 +15,9 @@ const parkContentTarget = document.querySelector('.preview__park')
 const eateryContentTarget = document.querySelector('.preview__eatery')
 const attractionContentTarget = document.querySelector('.preview__attraction')
 const SaveItineraryContentTarget = document.querySelector('.button--saveItinerary')
+const weatherContentTarget = document.querySelector('.weatherContainer')
 
-// Create an object to store the selection state of each dropdown
+// Creates an object to store the selection state of each dropdown:
 
 const userChoices = {
   parkChosen: false,
@@ -24,7 +25,7 @@ const userChoices = {
   attractionChosen: false
 }
 
-// Create a function that verifies if all choices have been made before rendering the save button
+// Creates a function that verifies if all choices have been made before rendering the save button:
 
 const verifyUserSelection = () => {
   if (userChoices.parkChosen && userChoices.eateryChosen && userChoices.attractionChosen) {
@@ -33,27 +34,28 @@ const verifyUserSelection = () => {
   }
 }
 
-// Create a custom event that finds the user-selected park/eatery/attraction and inserts into the HTML
-// Change the state of the parkChosen/eateryChosen/attractionChosen event to true once the user has selected an option
-// Call the verifyUserSelection function to verify that all selections have been made; if yes, render button
+// Creates a custom event that finds the user-selected park and inserts into the HTML;
+// Changes the state of the parkChosen event to true once the user has selected an option;
+// Calls the verifyUserSelection function to verify that all selections have been made; if yes, renders button;
+// Fetches weather data from API once 'parkChosen' custom event occurs and renders to DOM:
 
 eventHub.addEventListener('parkChosen', (customEvent) => {
   const parksArray = useParks()
+  console.log(parksArray)
   const foundPark = parksArray.find(parkObj => {
     return parkObj.parkCode === (customEvent.detail.chosenPark)
   })
   parkContentTarget.innerHTML = Park(foundPark)
   userChoices.parkChosen = true
   verifyUserSelection()
-
-  // GET WEATHER API STUFF *AFTER* PARK CHOSEN
-  // Id of park equal to lat long to push into weatherObject + APIKey
-  getWeather().then(() => {
+  getWeather(foundPark.addresses[0].postalCode).then(() => {
     const weatherData = useWeather()
-    const weatherTarget = document.querySelector('.weatherContainer')
-    weatherTarget.innerHTML += Weather(weatherData[0])
-  })
+    weatherContentTarget.innerHTML = Weather(weatherData)
+    })
 })
+
+// Creates a custom event that finds the user-selected attraction and inserts into the HTML;
+// Changes the state of the attractionChosen event to true once the user has selected an option:
 
 eventHub.addEventListener('attractionChosen', (customEvent) => {
   const attractionsArray = useAttractions()
@@ -65,6 +67,9 @@ eventHub.addEventListener('attractionChosen', (customEvent) => {
   verifyUserSelection()
 })
 
+// Creates a custom event that finds the user-selected eatery and inserts into the HTML;
+// Changes the state of the eateryChosen event to true once the user has selected an option:
+
 eventHub.addEventListener('eateryChosen', (customEvent) => {
   const eateriesArray = useEateries()
   const chosenEatery = eateriesArray.find((eateryObject) => {
@@ -75,33 +80,28 @@ eventHub.addEventListener('eateryChosen', (customEvent) => {
   verifyUserSelection()
 })
 
-// Create a click event that generates a new itinerary object to be saved to itineraries.json
+// Creates a click event that generates a new itinerary object to be saved to itineraries.json:
 
 contentTarget.addEventListener("click", clickEvent => {
   if (clickEvent.target.id === "button--saveItinerary") {
     const parkSelected = document.querySelector("#parkSelect").value
     const eaterySelected = document.querySelector("#eaterySelect").value
     const attractionSelected = document.querySelector("#attractionSelect").value
-    // Find the corresonding park object an grab its name 
+    // Finds the corresonding park object and grabs its name:
     const parksList = useParks()
     const locatedPark = parksList.find(parkObject => {
       return parkObject.parkCode === parkSelected
     })
-     // Find the corresonding eatery object an grab its name 
+     // Finds the corresonding eatery object and grabs its name: 
      const eateriesList = useEateries()
      const locatedEatery = eateriesList.find(eateryObject => {
        return eateryObject.id === parseInt(eaterySelected)
      })
-     // Find the corresonding attraction object an grab its name 
+     // Finds the corresonding attraction object and grabs its name:
      const attractionsList = useAttractions()
      const locatedAttraction = attractionsList.find(attractionObject => {
        return attractionObject.id === parseInt(attractionSelected)
      })
-
-
-
-
-
     // Store the data for the saved itinerary display and call function to render it 
     const newItinerary = {
       park: locatedPark.name,

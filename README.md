@@ -1,5 +1,8 @@
 # Holiday Road from Nashville
 
+![NSS Holiday Road Drew](https://github.com/midlantica/holiday-road-cosmic-chameleons/blob/master/Holiday_Road_Drew_screenshot.png "NSS Holiday Road Drew")
+
+
 You and your teammates have been contracted by the National Parks Service to build an application that will allow people to build itineraries for their trips to the beautiful national parks that they maintain. The starting point of each trip will be Nashville, TN, but the destination will a national park selected by the user.
 
 ## Getting Started
